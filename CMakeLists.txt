@@ -1,0 +1,24 @@
+cmake_minimum_required(VERSION 3.15)
+
+# 全局配置
+if (NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release)
+endif()
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+# 建立项目
+project(exp2023 
+    LANGUAGES CXX
+    VERSION 0.1.0
+    DESCRIPTION "综合实习 2023"
+    )
+
+# 项目配置
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
+
+# 子项目
+add_subdirectory(align)
