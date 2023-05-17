@@ -11,8 +11,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # 建立项目
 project(exp2023 
     LANGUAGES CXX
-    VERSION 0.1.0
+    VERSION 0.2.0
     DESCRIPTION "综合实习 2023"
+    HOMEPAGE_URL "https://github.com/ChuJiani/exp2023"
     )
 
 # 项目配置
